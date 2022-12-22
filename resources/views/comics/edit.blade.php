@@ -17,32 +17,32 @@
                         <input class="form-control" type="text" id="title" name="title" value="{{ $pasta->title }}">
                     </div>
                     <div>
-                        <label for="title">Descrizione</label>
+                        <label for="description">Descrizione</label>
                         <input class="form-control" type="text" id="description" name="description"
                             value="{{ $pasta->description }}">
                     </div>
                     <div>
-                        <label for="title">Immagine</label>
+                        <label for="thumb">Immagine</label>
                         <input class="form-control" type="text" id="thumb" name="thumb"
                             value="{{ $pasta->thumb }}">
                     </div>
                     <div>
-                        <label for="title">Prezzo</label>
+                        <label for="price">Prezzo</label>
                         <input class="form-control" type="text" id="price" name="price"
                             value="{{ $pasta->price }}">
                     </div>
                     <div>
-                        <label for="title">Serie</label>
+                        <label for="series">Serie</label>
                         <input class="form-control" type="text" id="series" name="series"
                             value="{{ $pasta->series }}">
                     </div>
                     <div>
-                        <label for="title">Data di vendita</label>
+                        <label for="sale_date">Data di vendita</label>
                         <input class="form-control" type="date" id="sale_date" name="sale_date"
                             value="{{ $pasta->sale_date }}">
                     </div>
                     <div>
-                        <label for="title">Tipo</label>
+                        <label for="type">Tipo</label>
                         <input class="form-control" type="text" id="type" name="type"
                             value="{{ $pasta->type }}">
                     </div>
