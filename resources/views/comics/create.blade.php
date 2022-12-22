@@ -25,19 +25,19 @@
                     </div>
                     <div>
                         <label for="title">Prezzo</label>
-                        <input class="form-control" type="text" id="thumb" name="thumb">
+                        <input class="form-control" type="text" id="price" name="price">
                     </div>
                     <div>
                         <label for="title">Serie</label>
-                        <input class="form-control" type="text" id="thumb" name="thumb">
+                        <input class="form-control" type="text" id="series" name="series">
                     </div>
                     <div>
                         <label for="title">Data di vendita</label>
-                        <input class="form-control" type="text" id="thumb" name="thumb">
+                        <input class="form-control" type="date" id="sale_date" name="sale_date">
                     </div>
                     <div>
                         <label for="title">Tipo</label>
-                        <input class="form-control" type="text" id="thumb" name="thumb">
+                        <input class="form-control" type="text" id="type" name="type">
                     </div>
 
                     <button class="btn btn-success" type="submit">Inserisci</button>
