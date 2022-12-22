@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    prova
+    <div class="container">
+        <h1>Pagina HOME</h1>
+    </div>
 @endsection

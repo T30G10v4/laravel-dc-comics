@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Comic;
+use App\Http\Controllers\Controller;
+
 class ComicController extends Controller
 {
     /**
@@ -42,9 +44,9 @@ class ComicController extends Controller
 
         $formData = $request->all();
         $newComic = new Comic();
-        $newComic = fill($formData);
+        $newComic->fill($formData);
         $newComic->save();
-        return redirect()->route('comics.show', $newcomic->id);
+        return redirect()->route('comics.index');
 
     }
 

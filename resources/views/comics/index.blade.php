@@ -7,18 +7,28 @@
             <thead>
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th>Titolo</th>
+                    <th>Descrizione</th>
+                    <th>Immagine</th>
+                    <th>Prezzo</th>
+                    <th>Serie</th>
+                    <th>Data di Vendita</th>
+                    <th>Tipo</th>
+                    <th>Azioni</th>
                 </tr>
             </thead>
             <tbody>
                 @foreach ($comics as $comic)
                     <tr>
-                        <th scope="row">{{ $comic->title }}</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td><a class="btn btn-primary" href="{{ route('comics.show', $comic->id) }}">go</a></td>
+                        <td scope="row">{{ $comic->id }}</td>
+                        <td>{{ $comic->title }}</td>
+                        <td>{{ $comic->description }}</td>
+                        <td><img src="{{ $comic->thumb }}" alt=""></td>
+                        <td>{{ $comic->price }}</td>
+                        <td>{{ $comic->series }}</td>
+                        <td>{{ $comic->sale_date }}</td>
+                        <td>{{ $comic->type }}</td>
+                        <td><a class="btn btn-primary" href="{{ route('comics.show', $comic->id) }}">Mostra</a></td>
                     </tr>
                 @endforeach
             </tbody>
